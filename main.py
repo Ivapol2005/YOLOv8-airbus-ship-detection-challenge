@@ -22,6 +22,6 @@ for image_file in os.listdir(image_dir):
         x1, y1, x2, y2, conf, cls = box
         license_plate = input_image.crop((x1, y1, x2, y2))
         
-        license_plate.save(os.path.join(output_dir, "("+str(i)+")" + image_file))
+        license_plate.save(os.path.join(output_dir, image_file + "("+str(i)+")" + ".jpg"))
 
 
