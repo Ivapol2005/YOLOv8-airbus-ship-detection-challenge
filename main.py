@@ -5,7 +5,7 @@ from PIL import Image
 
 current_dir = os.getcwd()
 
-image_dir = os.path.join(current_dir,"model/test-images/images")
+image_dir = os.path.join(current_dir,"model/test-images")
 output_dir = os.path.join(current_dir,"model/test-images-solved")
 
 model = YOLO(os.path.join(current_dir,"model/train/weights/best.pt"))
