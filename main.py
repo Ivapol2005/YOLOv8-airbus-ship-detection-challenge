@@ -1,14 +1,17 @@
 from ultralytics import YOLO
-import os
 from PIL import Image
 
+import os
+import sys
 
-current_dir = os.getcwd()
+script_directory = os.path.dirname(os.path.abspath(sys.argv[0])) 
+print(script_directory)
 
-image_dir = os.path.join(current_dir,"model/test-images")
-output_dir = os.path.join(current_dir,"model/test-images-solved")
+image_dir = f"{script_directory}/test-images"
+output_dir = f"{script_directory}/test-images-solved"
+model_dir = f"{script_directory}/train/weights/best.pt"
 
-model = YOLO(os.path.join(current_dir,"model/train/weights/best.pt"))
+model = YOLO(model_dir)
 
 for image_file in os.listdir(image_dir):
     
