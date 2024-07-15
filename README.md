@@ -1,1 +1,1 @@
-Airbus Ship Detection Challenge using YOLOv8 model. Model detects ships and saves to another folder. To test model place images to test-images folder, launch main.py with python and check test-images-solved
+Airbus Ship Detection Challenge using YOLOv8 model. Model detects ships and saves to another folder. To test model place images to "test-images" folder, launch "main.py" with python3 and check "test-images-solved"
